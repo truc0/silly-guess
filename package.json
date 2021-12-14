@@ -1,0 +1,15 @@
+{
+  "name": "silly-guess",
+  "version": "1.0.0",
+  "description": "An API backend for a silly guessing game",
+  "main": "index.js",
+  "repository": "https://github.com/truc0/silly-guess.git",
+  "author": "truc0 <22969604+truc0@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
