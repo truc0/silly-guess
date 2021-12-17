@@ -1,10 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 
 const { query, create, all } = require('./models')
 
 const app = express()
 const PORT = process.env.PORT || 8000
 
+app.use(cors())
 app.use(express.json())
 
 const getCount = games => {
@@ -17,7 +19,7 @@ app.get('/', (req, res) => {
 
 app.post('/', (req, res) => {
   const id = create({ max: req.body.max })
-  res.send({ id })
+  res.send({ token: id })
 })
 
 app.get('/:id', (req, res) => {
